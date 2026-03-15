@@ -1,0 +1,12 @@
+---
+description: Do not install packages without asking the user first
+alwaysApply: true
+---
+
+# No Auto-Installing Packages
+
+Never install packages (pip, npm, apt, etc.) without explicitly asking the user for permission first. The user manages their own .venv and dependencies.
+
+- Always ask before running `pip install`, `apt install`, or any package manager command.
+- If a task requires a new dependency, tell the user what is needed and why, then wait for approval.
+- Use Cursor's tool allowlist to restrict shell commands when possible.
